@@ -1,0 +1,194 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Source Sans Pro";
+  font-size: 16px;
+  color: #000000;
+  line-height: 1.5;
+}
+
+
+body {
+  margin: 0;
+  background-color: #202122e6;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Source Sans Pro";
+  font-size: 32px;
+  color: white;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  text-align: center;
+}
+
+header {
+  background-color: chocolate;
+  padding: 1rem 1rem;
+  text-align: center;
+  width: auto;
+}
+
+footer {
+  background-color: chocolate;
+  padding: 1rem 1rem;
+  text-align: center;
+}
+
+nav {
+  padding: 1rem;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+  border: 1px solid chocolate;
+  border-radius: 5px;
+  background-color: #202122;
+  padding: 8px 16px;
+}
+
+main {
+  padding: 0 1rem;
+}
+
+main p {
+  text-align: justify;
+  color: white;
+}
+
+.related-panel h3 {
+  text-align: center;
+  margin-top: auto;
+  height: fit-content;
+}
+
+.related-panel img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+
+figure {
+  display: block;
+  width: 100%;
+  margin: 0;
+  position: relative;
+}
+
+figure img {
+  display: block;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+figure figcaption {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  font-family: "Grandstander", cursive;
+}
+
+.related-engineer {
+  margin-left: auto;
+  margin-right: auto;
+  outline: auto;
+  outline-color: chocolate;
+  outline-width: 2px;
+  text-align: center;
+}
+
+
+.related-paragraph {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: white;
+}
+
+.related-table {
+  display: flex;
+  justify-content: space-around;
+  outline: auto;
+  outline-color: chocolate;
+  outline-width: 2px;
+  width: auto;
+}
+.related-table th {
+  font-size: 36px;
+  color: white;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  outline: auto;
+  outline-color: chocolate;
+  width: auto;
+  text-align: center;
+}
+
+.related-table td {
+  text-align: center;
+  outline: auto;
+  width: 50%;
+  flex-wrap: wrap;
+  height: auto;
+  margin-top: auto;
+}
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 16px;
+  }
+  main {
+    padding: 0;
+  }
+
+  .container {
+    display: block;
+    width: 992px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .columns-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  .columns-2 article {
+    flex: 2;
+    margin-right: 0.5rem;
+  }
+  .columns-2 aside {
+    flex: 1;
+    margin-left: 0.5rem;
+  }
+
+  .related-grid {
+    display: grid;
+    display: table-cell;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: 1rem;
+  }
+  .related-panel {
+    padding: 1rem;
+  }
+}
