@@ -58,6 +58,10 @@ nav ul li {
   padding: 8px 16px;
 }
 
+nav ul li a{
+  color: white;
+}
+
 main {
   padding: 0 1rem;
 }
