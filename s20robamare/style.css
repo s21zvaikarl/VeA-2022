@@ -3,7 +3,8 @@
 }
 
 html {
-  font-family: "Source Sans Pro";
+  font-family: 'Grandstander', cursive;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
   color: #000000;
   line-height: 1.5;
@@ -19,9 +20,10 @@ h1,
 h2,
 h3 {
   font-family: "Source Sans Pro";
-  font-size: 32px;
+  font-size: 38px;
+  font-weight: 100;
   color: white;
-  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: black;
   text-align: center;
 }
@@ -56,6 +58,10 @@ nav ul li {
   border-radius: 5px;
   background-color: #202122;
   padding: 8px 16px;
+}
+
+nav ul li a{
+  color: white;
 }
 
 main {
@@ -132,9 +138,10 @@ figure figcaption {
   width: auto;
 }
 .related-table th {
-  font-size: 36px;
+  font-size: 38px;
+  font-weight: 100;
   color: white;
-  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: black;
   outline: auto;
   outline-color: chocolate;
