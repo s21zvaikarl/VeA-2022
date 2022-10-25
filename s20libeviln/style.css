@@ -136,9 +136,9 @@ main {
 }
 .related-grid {
  display: grid;
- grid-template-columns: 905px 250px 1px;
+ grid-template-columns: 1fr 1fr 1fr;
  column-gap: 1.0rem;
- row-gap: 0.5rem;
+ row-gap: 1.0rem;
 }
 .columns-3 {
  display: initial;
