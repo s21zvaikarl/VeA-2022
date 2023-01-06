@@ -1,0 +1,53 @@
+/*https://blobs.webflow.io/ šeit atradu "life hack", kā attēlot metabāļus ar filtriem*/
+
+#burger-wrap {
+    width: 6vh;
+    height: 6vh;
+    padding-left: 3vh;
+    padding-right: 3vh;
+    border-radius: 6vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    filter: blur(0.5vh);
+    cursor: pointer;
+}
+
+#meta-wrap {
+    filter: brightness(60%) contrast(5000%);
+    background-color: white;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.burger {
+    width: 1vh;
+    height: 1vh;
+    border-radius: 1vh;
+    background-color: black;
+    transition: transform 0.8s ease;
+}
+
+.meta-wrap-click .burger{
+    background-color: red;
+}
+
+.meta-wrap-click-ball1{
+    transform: translate(2.5vh);
+}
+
+.meta-wrap-click-ball3{
+    transform: translate(-2.5vh);
+}
+
+.meta-wrap-click-ball2{
+    transform: scale(2.5);
+}
+
+@media only screen and (max-width: 25cm) {
+    #meta-wrap {
+        display: flex;
+    }
+}

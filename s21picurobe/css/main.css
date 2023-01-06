@@ -1,0 +1,213 @@
+landing {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: -2;
+}
+
+#fixed-background {
+    width: 100vw;
+    height: 80vh;
+    padding-top: 20vh;
+    background-image: url("../images/mtbTrailAndRiderBlur.png");
+    background-size: cover;
+    background-position: center;
+    background-position-y: 20vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: -3;
+}
+
+@media (max-width: 25cm) {
+    #fixed-background {
+        background-position-y: 0;
+        height: 90vh;
+        min-height: -webkit-fill-available;
+        padding-top: 10vh;
+    }
+}
+#landing-info-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0);
+    max-width: 60%;
+    padding: 2vh;
+    border-radius: 1vh;
+}
+
+#landing-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 6vh;
+    color: rgb(255, 255, 255);
+    min-width: none;
+    min-height: none;
+    display: flex;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-justify: center;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.747);
+}
+
+#landing-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 2.5vh;
+    color: rgb(255, 255, 255);
+    min-width: none;
+    min-height: none;
+    display: flex;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-justify: center;
+    padding: 1vh;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.747);
+}
+
+
+main {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    background-color: white;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    z-index: -2;
+}
+
+.route-wrap-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.route-wrap {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 35vh;
+    width: 35vh;
+    background-color: rgb(255, 255, 255,0.5);
+    margin: 4vh;
+    flex-shrink: 0;
+    border-radius: 1vh;
+    box-shadow: 0px 0px 26px 0px rgba(0,0,0,0.24);
+    -webkit-box-shadow: 0px 0px 26px 0px rgba(0,0,0,0.24);
+    -moz-box-shadow: 0px 0px 26px 0px rgba(0,0,0,0.24);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 4vh;
+    color: rgb(255, 255, 255);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.747);
+    position: relative;
+    cursor: pointer;
+    transition: font-size 0.2s;
+}
+
+.route-wrap-info {
+    width: 35vh;
+    height: 35vh;
+    position: absolute;
+    font-size: 3vh;
+    font-weight: 500;
+    text-shadow: none;
+    display: flex;
+    transform: scale(0);
+    transition: transform 0.3s;
+    background-color: rgba(0, 0, 0, 0.397);
+    border-radius: 1vh;
+    padding: 3vh;
+    padding-top: 10vh;
+    box-sizing: border-box;
+}
+
+.route-wrap-dropdown {
+    position: absolute;
+    width: 7vh;
+    height: 7vh;
+    background-color: rgba(0, 0, 0, 0.163);
+    top: 0;
+    margin: 1vh;
+    background-image: url(../svgs/dropWhite.svg);
+    background-position: center;
+    background-size: 4vh;
+    background-repeat: no-repeat;
+    border-radius: 7vh;
+    border-width: 2vh;
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.747));
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+
+
+@media (hover: hover) {
+    .route-wrap:hover {
+        font-size: 4.5vh;
+    }
+
+    .route-wrap-dropdown:hover {
+        background-color: black;
+    }
+}
+
+.route-wrap#mtb {
+    background-image: url(../images/mtb.jpg);   
+}
+
+.route-wrap#xc {
+    background-image: url(../images/xc.jpg);   
+}
+
+.route-wrap#gravel {
+    background-image: url(../images/gravel.jpg);   
+}
+
+.route-wrap#hiking {
+    background-image: url(../images/hikinh.jpg);   
+}
+
+.to-link-mobile {
+    position: absolute;
+    width: 2vh;
+    height: 2vh;
+    top: -15vh;
+}
+
+footer {
+    width: 100%;
+    height: 10vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 2.5vh;
+}
