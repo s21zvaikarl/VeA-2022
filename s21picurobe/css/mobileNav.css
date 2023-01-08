@@ -1,0 +1,109 @@
+#mobile-nav {
+    width: 100%;
+    min-height: 90vh;
+    background-color: white;
+    transform: translateY(-90vh);
+    transition: transform 0.8s ease;
+    display: flex;
+    z-index: 0;
+    position: fixed;
+    justify-content:flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10vh;
+    padding: env(safe-area-inset-top), env(safe-area-inset-right), env(safe-area-inset-bottom) env(safe-area-inset-left);
+    box-shadow: 10px 9px 50px -15px rgba(0,0,0,0.24);
+    -webkit-box-shadow: 10px 9px 50px -15px rgba(0,0,0,0.24);
+    -moz-box-shadow: 10px 9px 50px -15px rgba(0,0,0,0.24);
+}
+
+.nav-row {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    background-color: none;
+    background-color: white;
+
+}
+
+.mobile-left {
+    width: 25%;
+}
+
+.mobile-middle {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-right {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.mobile-nav-link {
+    color: black;
+    width: 100%;
+    padding: 1vh;
+    margin: 2vh;
+    font-size: 3vh;
+    display: inline;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    flex-wrap: nowrap;
+    text-align: center;
+    background-color: white;
+    box-shadow: 10px 9px 26px -15px rgba(0,0,0,0.24);
+-webkit-box-shadow: 10px 9px 26px -15px rgba(0,0,0,0.24);
+-moz-box-shadow: 10px 9px 26px -15px rgba(0,0,0,0.24);
+    border-radius: 1vh;
+    border-color: none;
+}
+
+.mobile-dropdown-link {
+    padding: 1vh;
+    color: rgba(0, 0, 0, 0.474);
+    font-size: 3vh;
+    display: inline;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    flex-wrap: nowrap;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    display: block;
+    z-index: 0;
+    background-color: none;
+}
+
+.dropdown-wrap {
+    display: none;
+    margin-top: none;
+    padding-bottom: 2vh;
+}
+
+.mobile-nav-icon {
+    width: 3vh;
+    height: 3vh;
+    padding: 1vh;
+    border-radius: 1vh;
+    background-color: rgb(255, 255, 255);
+    transition: transform 0.5s ease;
+}
+
+.mobile-nav-icon:hover {
+    cursor: pointer;
+}
+
+.mobile-copy-icon {
+    position: relative;
+    height: 2.25vh;
+    padding-left: 1vh;
+    opacity: 0.474;
+}

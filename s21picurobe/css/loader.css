@@ -1,0 +1,23 @@
+#loader-wrap {
+    width: 100%;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    position: fixed;
+    z-index: 100;
+    position: fixed;
+    transition: opacity 1s;
+}
+
+#loader {
+    height: 20vh;
+    opacity: 0;
+}
+
+#green-rec {
+    transform-box: fill-box;
+    transform-origin: bottom;
+}

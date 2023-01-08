@@ -1,0 +1,33 @@
+svg#logo {
+    width: 100%;
+}
+
+#top-tree-border {
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+#top-tree-fill {
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+#mid-tree-border {
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+#mid-tree-fill {
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+#bot-tree-border {
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+#bot-tree-fill {
+    transform-box: fill-box;
+    transform-origin: center;
+}

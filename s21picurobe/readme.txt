@@ -1,0 +1,1 @@
+Labdien, css atstāju vairākos failos, lai būtu pārskatāmāk. Saprotu, ka tiks veikti vairāki http pieprasījumi.
