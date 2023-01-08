@@ -1,0 +1,382 @@
+:root {
+    --sar: env(safe-area-inset-right);
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    background-color: rgb(255, 255, 255); /*lai neraustās pārlādējot lapu mobilās ierīcās, kā arī aizpildītu iphone saliņu*/
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    background-color: none;
+    transition: background-color 0.5s ease;
+}
+
+/* galvene */
+
+header {
+    width: 100%;
+    height: 10vh;
+    background-color: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 6;
+    position: fixed;
+    transition: transform 0.5s ease;
+    -webkit-transition: transform 0.5s ease;
+}
+
+.logo {
+    max-width: 40%;
+    max-height: 8vh;
+    position: absolute;
+    transition: transform 0.25s ease;
+    -webkit-transition: transform 0.25s ease;
+    cursor: pointer;
+}
+
+#dd-button {
+    height: 6vh;
+    width: 6vh;
+    display: none;
+    position: absolute;
+    right: 2vh;
+    cursor: pointer;
+}
+
+svg {
+    height: 6vh;
+    width: 6vh;
+    transition: transform 0.5s ease;
+    transform-box: fill-box;
+    transform-origin: center;
+    transform: rotate(0deg);
+}
+
+#mouth {
+    transition: transform 0.5s ease;
+    transform-box: fill-box;
+    transform-origin: center;
+    transform: scale(0.3);
+}
+
+/* mobile nav */
+
+#dd-menu {
+    background-color: white;
+    height: 100vh;
+    min-height: -webkit-fill-available;
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    transform: translateY(-90vh);
+    -moz-transform: translateY(-90vh);;
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    filter: drop-shadow(0px 20px 59px rgb(255, 255, 255));
+}
+
+.wrap-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.signature {
+    float: left;
+    height: 7vh;
+    width: 30vh;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 5vh;
+}
+
+#twod {background-image: url("images/signature_dd.png");}
+#murdoc {background-image: url("images/signature_murdoc.png");}
+#noodle {background-image: url("images/signature_noodle.png");}
+#russel {background-image: url("images/signature_russel.png");}
+
+/* Landing */
+
+#landing {
+    display: none;
+    flex-direction: row;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 10vh;
+    height: -webkit-fill-available;
+    height: 100vh;
+    justify-content: space-around;
+    align-items: flex-end;
+    position: fixed;
+    padding-bottom: 50vh;
+    background-color: white;
+}
+
+#landing a {
+    width:15%;
+    height: 100vh;
+    overflow: visible;
+    display: none;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.wrap-characters {
+    width: 15%;
+    height: 100vh;
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.gorillaz-characters {
+    position: relative;
+    max-height:60vh;
+    transition: transform 0.5s ease;
+}
+
+#russel-character {
+    padding-bottom: 10vh;
+}
+
+#dd-character {
+    padding-bottom: 10vh;
+}
+
+#noodle-character {
+    z-index: 2;
+}
+
+#murdoc-character {
+    padding-bottom: 10vh;
+}
+
+.signature-on-hover {
+    position: absolute;
+    top: 25vh;
+    min-width: 6%;
+    max-height: 8vh;
+    z-index: 3;
+    transform: scale(0);
+    display: block;
+    transition: transform 0.2s ease;
+}
+
+@media (min-aspect-ratio: 16/9) and (hover: hover) {
+    #landing a:hover + img {
+        cursor: pointer;
+        transform: scale(1.2);
+    }
+
+    #landing a:hover~.gorillaz-characters {
+        transform: scale(1.2);
+    }
+
+    #landing a:hover{
+        cursor: pointer;
+    }
+
+    #hover-noodle {
+        top: 35vh!important;
+    }
+    #dd-button {
+        display: none!important;
+    }
+    #landing a {
+        display: flex;
+        width: inherit;
+        height: inherit;
+        position: absolute;
+        transform: scale(1.2);
+        z-index: 4;
+    }
+    * {
+        scroll-behavior: smooth;
+    }
+}
+
+/* main */
+
+main {
+    width: 100%;
+    margin-top: 100vh;
+    background-color: rgb(255, 255, 255);
+    z-index: 4;
+    position: absolute;
+    display: none;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 5%;
+}
+
+.content-wrap {
+    width: 80%;
+    margin-top: 10vh;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2vh;
+    border-width: 2vh;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.181));
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.link-to-member {
+    position:absolute;
+    transform: translateY(-15vh);
+}
+
+.content-image {
+    position: relative;
+    height: 35vh;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    border-radius: 2vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.main-text {
+    font-size: 2.2vh;
+    -webkit-font-size: 2.2vh;
+    text-align: left;
+    vertical-align: text-top;
+}
+
+.content-text i {
+    font-weight: 500;
+}
+
+.list {
+    margin-left: 5vh;
+    font-size: 2.2vh;
+    -webkit-font-size: 2.2vh;
+}
+
+@media (min-aspect-ratio: 1/1) {
+    .content-wrap {
+        width: 80%;
+        flex-wrap: nowrap;
+    }
+    .content-image {
+        height: auto;
+        min-height: 30vh;
+        max-width: 35%;
+        flex-shrink: 0;
+        flex-grow: 0;
+    }
+
+    .content-text {
+        width: calc(65% - 2vh);
+        margin-left: 2vh;
+        margin-top: none;
+    }
+}
+
+footer {
+    margin-top: 5%;
+    z-index: 100;
+    height: 10vh;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+}
+
+#about {
+    background-image: url("images/people_behind_gorillaz.webp");
+}
+
+#about::after {
+    content: "About";
+    position: absolute;
+    color: white;
+    font-weight: 800;
+    font-size: 5vh;
+    padding: 1vh;
+    z-index: 8;
+}
+
+#dd-blurb {
+    background-image: url("images/dd_profile.jpg");
+}
+
+#dd-blurb::after {
+    content: "2-D";
+    position: absolute;
+    color: white;
+    font-weight: 800;
+    font-size: 5vh;
+    padding: 1vh;
+    z-index: 8;
+}
+
+#murdoc-blurb {
+    background-image: url("images/murdoc_profile.jpg");
+    background-position: top;
+}
+
+#murdoc-blurb::after {
+    content: "Murdoc";
+    position: absolute;
+    color: white;
+    font-weight: 800;
+    font-size: 5vh;
+    padding: 1vh;
+    z-index: 8;
+}
+
+#noodle-blurb {
+    background-image: url("images/noodle_profile.jpg");
+    background-position: top;
+}
+
+#noodle-blurb::after {
+    content: "Noodle";
+    position: absolute;
+    color: white;
+    font-weight: 800;
+    font-size: 5vh;
+    padding: 1vh;
+    z-index: 8;
+}
+
+#russel-blurb {
+    background-image: url("images/russel_profile.jpg");
+}
+
+#russel-blurb::after {
+    content: "Russel";
+    position: absolute;
+    color: white;
+    font-weight: 800;
+    font-size: 5vh;
+    padding: 1vh;
+    z-index: 8;
+}
