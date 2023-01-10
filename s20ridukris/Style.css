@@ -125,36 +125,37 @@ figure figcaption {
     main {
         padding: 0;
     }
-}
 
-.container {
-    display: block;
-    width: 992px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.columns-2 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: stretch;
-}
+    .container {
+        display: block;
+        width: 992px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-.columns-2 article {
-    flex: 2;
-    margin-right: 0.5rem;
-}
+    .columns-2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: stretch;
+    }
 
-.columns-2 aside {
-    flex: 1;
-    margin-left: 0.5rem;
-}
+    .columns-2 article {
+        flex: 2;
+        margin-right: 0.5rem;
+    }
 
-.related-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 1rem;
-    row-gap: 1rem;
+    .columns-2 aside {
+        flex: 1;
+        margin-left: 0.5rem;
+    }
+
+    .related-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 1rem;
+        row-gap: 1rem;
+    }
 }
 
